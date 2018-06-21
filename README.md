@@ -45,5 +45,26 @@ req.params(), req.query(), req.body() 메소드를 주로 사용한다.
 http 모듈의 response 객체를 래핑한 것이다.
 res.send(), res.status(), res.json() 메소드를 주로 사용한다. 
 
+### HTTP 메서드
+서버 자원에 대한 행동을 나타낸다.(동사로 표현)
+-GET : 자원을 조회
+-POST : 자원을 생성
+-PUT : 자원을 갱신
+-DELETE : 자원을 삭제
+
+이는 익스프레스 어플리케이션의 메소드로 구현되어 있다.
 
 
+### api 만들기
+-GET /users
+ : 사용자 목록을 조회하는 기능
+
+
+### 테스트 주도 개발
+TDD로 개발하자.
+mocha, should, superTest
+
+#### Mocha
+모카는 테스트 코드를 돌려주는 테스트 러너.
+테스트 슈트 : 테스트 환경으로 모카에서는 describe()으로 구현
+테스트 케이스 : 실제 테스트를 말하며 모카에서는 it()으로 구현
